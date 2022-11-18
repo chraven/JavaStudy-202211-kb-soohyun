@@ -6,4 +6,5 @@ public class Access2 {
     void printAge() {
         System.out.println("age: " + age);
     }
+
 }
