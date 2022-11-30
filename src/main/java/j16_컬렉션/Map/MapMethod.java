@@ -95,7 +95,7 @@ public class MapMethod {
 		Set<String> keys = map.keySet();//keySet(): map에 있는 key 값을 전부 String타입으로 Set으로 저장하게 된다.
 		for(String key : keys) {
 			System.out.println(key);
-			System.out.println(map.get(keys));//같은 foreach문에 있기 때문에 순서가 동일하다.
+			System.out.println(map.get(key));//같은 foreach문에 있기 때문에 순서가 동일하다.
 			
 		}
 		
