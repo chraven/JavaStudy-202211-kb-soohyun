@@ -30,7 +30,7 @@ public class CustomException extends RuntimeException {//노란줄 serialversion
 	}
 	
 	public void printErrorMap() {
-		Objects.requireNonNull(errorMap);//errorMap이 null일때 nullPointer예외 날려줌
+		Objects.requireNonNull(errorMap);//errorMap이 nul0이 아닐때 nullPointer예외 날려줌
 		
 		for(Entry<String, String> entry: errorMap.entrySet()) {
 			System.out.println(entry.getKey() + ">>>" + entry.getValue());
