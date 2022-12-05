@@ -27,6 +27,10 @@ public class Main4 {
 			return map;
 		};
 		
+		Map<Integer, String> aMap = createMap.apply(1,"안녕");
+		System.out.println(aMap.getClass());//데이터타입을 모르겠을 때 변수명.getClass()를 이용하면 알 수 있다.
+		System.out.println(createMap.getClass());
+		
 		List<Map<Integer, String>> list = new ArrayList<>();
 		list.add(createMap.apply(100,  "김영희"));
 		list.add(createMap.apply(200,  "김일희"));
