@@ -14,7 +14,7 @@ public class StringMethod4 {
 		roles = roles.replaceAll(" ", "");
 		
 		String[] roleArray =roles.split(",");
-		List<String> roleList = Arrays.asList(roleArray);
+		List<String> roleList = Arrays.asList(roleArray);//asList: 배열을 리스트 형태로  바꾼다.
 		
 		System.out.println(roleList);
 		

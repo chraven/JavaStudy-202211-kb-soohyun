@@ -11,11 +11,12 @@ public class StringMethod2 {
 		String[] roleArray = new String[3];
 		
 		String tempRoles = roles;
+		
 		roleArray[0] = tempRoles.substring(0, tempRoles.indexOf(",") != -1 ? tempRoles.indexOf(",") : tempRoles.length());
 		tempRoles = tempRoles.substring(tempRoles.indexOf(",") + 2); //ROLE_USER를 꺼내고 그 다음 다음 인덱스가 0이 된다.
 		
 		roleArray[1] = tempRoles.substring(0, tempRoles.indexOf(",")!= -1 ? tempRoles.indexOf(",") : tempRoles.length());
-		tempRoles = tempRoles.substring(tempRoles.indexOf(",") + 2); //,를 찾으면 -1을 찾게 된다.
+		tempRoles = tempRoles.substring(tempRoles.indexOf(",") + 2); //,를 못찾으면 인덱스 -1을 반환해서 !=값이 거짓이되어 뒤의 길이를 반환하도록.
 		
 		roleArray[2] = tempRoles.substring(0, tempRoles.indexOf(",")!= -1 ? tempRoles.indexOf(",") : tempRoles.length());
 		
@@ -30,6 +31,9 @@ public class StringMethod2 {
 		for(String role : roleArray2) {
 			System.out.println(role);
 		}
-	
+		
+		String abc = "abcde";
+		
+		System.out.println(abc.indexOf("f"));
 	}
 }
