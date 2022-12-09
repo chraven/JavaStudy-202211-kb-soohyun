@@ -39,6 +39,6 @@ public class orderBuilder {
 	}
 	
 	public Order build () {
-		return new Order();
+		return new Order(orderId, productName, consumerName, price, stock);
 	}
 }
